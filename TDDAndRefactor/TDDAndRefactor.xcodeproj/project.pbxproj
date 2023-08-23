@@ -16,6 +16,8 @@
 		361BB11B2A9592A80001033E /* TDDAndRefactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BB11A2A9592A80001033E /* TDDAndRefactorTests.swift */; };
 		361BB1252A9592A80001033E /* TDDAndRefactorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BB1242A9592A80001033E /* TDDAndRefactorUITests.swift */; };
 		361BB1272A9592A80001033E /* TDDAndRefactorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BB1262A9592A80001033E /* TDDAndRefactorUITestsLaunchTests.swift */; };
+		36716DAE2A95ED1A00A01EB2 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36716DAD2A95ED1A00A01EB2 /* Budget.swift */; };
+		36716DB02A95EE4F00A01EB2 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36716DAF2A95EE4F00A01EB2 /* BudgetTests.swift */; };
 		3E7AE325A04F3C5F5E07C4F3 /* Pods_TDDAndRefactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC5B319F6C33398242E8BA /* Pods_TDDAndRefactor.framework */; };
 		4B3487683BD972C71ED7D398 /* Pods_TDDAndRefactor_TDDAndRefactorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A54DE64819C56978D948C0 /* Pods_TDDAndRefactor_TDDAndRefactorUITests.framework */; };
 		CA3255CCF9332977CFF4B047 /* Pods_TDDAndRefactorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7C1849FDB10821C9B9FC50 /* Pods_TDDAndRefactorTests.framework */; };
@@ -54,6 +56,8 @@
 		361BB1202A9592A80001033E /* TDDAndRefactorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDAndRefactorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		361BB1242A9592A80001033E /* TDDAndRefactorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDAndRefactorUITests.swift; sourceTree = "<group>"; };
 		361BB1262A9592A80001033E /* TDDAndRefactorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDAndRefactorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36716DAD2A95ED1A00A01EB2 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		36716DAF2A95EE4F00A01EB2 /* BudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTests.swift; sourceTree = "<group>"; };
 		67A267CA47123F5969C965F5 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig"; path = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests/Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8039DACEA3517DBF7692CFCC /* Pods-TDDAndRefactorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDAndRefactorTests.release.xcconfig"; path = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests.release.xcconfig"; sourceTree = "<group>"; };
 		91E8016E74F80A0E5E82704A /* Pods-TDDAndRefactorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDAndRefactorTests.debug.xcconfig"; path = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				361BB10C2A9592A80001033E /* Assets.xcassets */,
 				361BB10E2A9592A80001033E /* LaunchScreen.storyboard */,
 				361BB1112A9592A80001033E /* Info.plist */,
+				36716DAD2A95ED1A00A01EB2 /* Budget.swift */,
 			);
 			path = TDDAndRefactor;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				361BB11A2A9592A80001033E /* TDDAndRefactorTests.swift */,
+				36716DAF2A95EE4F00A01EB2 /* BudgetTests.swift */,
 			);
 			path = TDDAndRefactorTests;
 			sourceTree = "<group>";
@@ -164,7 +170,6 @@
 				91E8016E74F80A0E5E82704A /* Pods-TDDAndRefactorTests.debug.xcconfig */,
 				8039DACEA3517DBF7692CFCC /* Pods-TDDAndRefactorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -391,6 +396,7 @@
 			files = (
 				361BB1082A9592A70001033E /* ViewController.swift in Sources */,
 				361BB1042A9592A70001033E /* AppDelegate.swift in Sources */,
+				36716DAE2A95ED1A00A01EB2 /* Budget.swift in Sources */,
 				361BB1062A9592A70001033E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36716DB02A95EE4F00A01EB2 /* BudgetTests.swift in Sources */,
 				361BB11B2A9592A80001033E /* TDDAndRefactorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
