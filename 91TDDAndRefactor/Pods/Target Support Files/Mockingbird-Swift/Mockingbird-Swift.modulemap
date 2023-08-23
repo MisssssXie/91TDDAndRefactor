@@ -1,0 +1,6 @@
+framework module Mockingbird_Swift {
+  umbrella header "Mockingbird-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
