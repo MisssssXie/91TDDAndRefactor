@@ -1,0 +1,1030 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		034C490E7116237A88EA938ADAB58331 /* Mockingbird-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4579DE7F297C37D583013D16257825DC /* Mockingbird-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12B4B89CAC519BC041FBC80FDF2ABFAA /* Pods-TDDAndRefactor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1667D55D7138C1E2AD52E06566243EF /* Pods-TDDAndRefactor-dummy.m */; };
+		1339BA5C3D52C48E357B068E84B4DF31 /* RequestValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA4DDCD5CD9D75732B51F2C2ECB618 /* RequestValidation.swift */; };
+		3CE3E955F18AC68979E5ACF5A21A5CC6 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB13D05B66B98E69F439D48E787AC7F /* RequestType.swift */; };
+		44F4D718FF1443E3FDB45BAAC11317FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		47186F8935A32AFD0C8ED0551C1057BF /* MockingbirdError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E714B5E302679EABBA371C868DBFBCF8 /* MockingbirdError.swift */; };
+		479042936559AB7715B5F1E3406A614E /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DAE0B22231A5D84D1D7A23D0415B15 /* Middleware.swift */; };
+		48E2499F176BF9807CEEE4DA33AED435 /* Pods-TDDAndRefactor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FAA979104397E561D7535083913C2B4 /* Pods-TDDAndRefactor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		601A3CF6D4A9CBF51EED6A6C2F1B5D1F /* URL+RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CB5148F1B8411A35D58C797691BEE7 /* URL+RemoteService.swift */; };
+		6E26325D5746D0386347180A96E1A88B /* Pods-TDDAndRefactorTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6E77EF0636ABF3C7FFD253737DCAEC /* Pods-TDDAndRefactorTests-dummy.m */; };
+		7AAE08D03881FAAB16412F30A359AA91 /* Mockingbird-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C71436150E14CB4780A46CC96979701 /* Mockingbird-Swift-dummy.m */; };
+		7CB23F766D1B33F6DF94BF75387D084A /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B8E203A14D8218F3CB28D9A8429C2 /* MockURLProtocol.swift */; };
+		7F40E14C5E7EEEB3F79EA151C2B6CDC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		83F8CFFF78B272B2EF580E5486227C1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		85E0B634FDD4D7251ABD5FCE8731EFC4 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8B1BFD137DC82219397DEE5A0CB887 /* Request.swift */; };
+		8820AEEEE86EEDE674E3CAA682EA8ABA /* RequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF0BB00E944EA4E43C82748B98B4A70 /* RequestOperation.swift */; };
+		89418C49C93D51A32A984AB7EF0AD1B3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516A7C47E7A16E16C5F666BD1CFA2A16 /* HTTPMethod.swift */; };
+		8B4DBD1326149E2AFCE79CBBEFB337A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9B4BE01FFA3B29030C39028CE95FBB2D /* Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F857F9A449913A5A2D5F7A383C1B9403 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m */; };
+		A1FDD84926D321BAA390984BA4500EA0 /* Pods-TDDAndRefactorTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5B07BBB4A5368362DB6E046CA46F66 /* Pods-TDDAndRefactorTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2B8510E90645353A49E796B8B09DFC0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7ACEEE220BEA3118F10ADEA927E9CF /* Response.swift */; };
+		A7D8B6BA4F6DD3D28C5B4CD3BFC6F847 /* ParameterEncodingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E1CB512471344052DDAAB893DFDEB /* ParameterEncodingType.swift */; };
+		B42CF3D5C03E6478E7438CC7A1D08923 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAC748B6871BD0C6E75685B35AE5F5A6 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6BAF24B0A75ACA6FFDA92AFF2346B07 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AF6BC9A09B0175B1B95C990CD13792 /* RemoteService.swift */; };
+		C2D2C7289C8CC73E3C63945DB3E08B80 /* AnyEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E85B875D754027FD936250E7083C4E3 /* AnyEncodable.swift */; };
+		C329685DE78F235245A55230FC904A26 /* URLRequest+encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EF8442B296448D01FFAD83E8BF84A3 /* URLRequest+encoding.swift */; };
+		C4434D22EB494BBE3A185E45693D9DB5 /* OSLogger+Subsystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB657BD55A775A0ED646612F367A3F7 /* OSLogger+Subsystem.swift */; };
+		CC25AD00954D0222B0D96D38A5538EAF /* Mockingbird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DA52B63C13E72EC897CCB90603FA11 /* Mockingbird.swift */; };
+		DB859D4B46756617C633C478F903BAB1 /* NetworkActivityMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3259493BEEF795F99587462EAE99B43 /* NetworkActivityMiddleware.swift */; };
+		E0B5303C8AB2A78A44A81D4281997C9F /* AccessTokenMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4781F2F7A8CBA7D27F51A93A09A032C /* AccessTokenMiddleware.swift */; };
+		E67D7FC496D7E3227AA5D0FB54F8F9E1 /* Mockingbird+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09D37C315355B47C4DB95FBECE2D2D6 /* Mockingbird+Defaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34934BDA1E800F5BE5ACBAE901038B36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7D9CD6C8ADBD31268105618303E9DC8;
+			remoteInfo = "Mockingbird-Swift";
+		};
+		CCDE0577995EFD029257DADEA15F68DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3472E58B84DFC7D377EF8AC82317A8FD;
+			remoteInfo = "Pods-TDDAndRefactor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		061DC6C08DA661C52715DFA76FDC088A /* Pods-TDDAndRefactorTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TDDAndRefactorTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E85B875D754027FD936250E7083C4E3 /* AnyEncodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyEncodable.swift; path = Sources/Mockingbird/AnyEncodable.swift; sourceTree = "<group>"; };
+		0E8B1BFD137DC82219397DEE5A0CB887 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Mockingbird/Request.swift; sourceTree = "<group>"; };
+		0EF0BB00E944EA4E43C82748B98B4A70 /* RequestOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestOperation.swift; path = Sources/Mockingbird/RequestOperation.swift; sourceTree = "<group>"; };
+		11DAE0B22231A5D84D1D7A23D0415B15 /* Middleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Middleware.swift; path = Sources/Mockingbird/Middleware.swift; sourceTree = "<group>"; };
+		13B97241F1511C1E0BEE687DE53EDFB3 /* Pods-TDDAndRefactorTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactorTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		17AF6BC9A09B0175B1B95C990CD13792 /* RemoteService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteService.swift; path = Sources/Mockingbird/RemoteService.swift; sourceTree = "<group>"; };
+		18DA4DDCD5CD9D75732B51F2C2ECB618 /* RequestValidation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestValidation.swift; path = Sources/Mockingbird/RequestValidation.swift; sourceTree = "<group>"; };
+		1C71436150E14CB4780A46CC96979701 /* Mockingbird-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Mockingbird-Swift-dummy.m"; sourceTree = "<group>"; };
+		1D6E77EF0636ABF3C7FFD253737DCAEC /* Pods-TDDAndRefactorTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TDDAndRefactorTests-dummy.m"; sourceTree = "<group>"; };
+		25335F6722D7BEC5152F4EE891C9545A /* Mockingbird-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mockingbird-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		28356E67B37B314F7827A9F06B52FEC7 /* Pods-TDDAndRefactor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactor.release.xcconfig"; sourceTree = "<group>"; };
+		352E1CB512471344052DDAAB893DFDEB /* ParameterEncodingType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncodingType.swift; path = Sources/Mockingbird/ParameterEncodingType.swift; sourceTree = "<group>"; };
+		4579DE7F297C37D583013D16257825DC /* Mockingbird-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingbird-Swift-umbrella.h"; sourceTree = "<group>"; };
+		45D94449E113F9DC7060E5E360BB214B /* Mockingbird-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Mockingbird-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		463B8E203A14D8218F3CB28D9A8429C2 /* MockURLProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockURLProtocol.swift; path = Sources/Mockingbird/MockURLProtocol.swift; sourceTree = "<group>"; };
+		46DA52B63C13E72EC897CCB90603FA11 /* Mockingbird.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mockingbird.swift; path = Sources/Mockingbird/Mockingbird.swift; sourceTree = "<group>"; };
+		4AF09719C5B57D031C51A34C8959B7C3 /* Pods-TDDAndRefactor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactor.debug.xcconfig"; sourceTree = "<group>"; };
+		4BCA82F454F335BC57F3000012DDC7B4 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests.modulemap"; sourceTree = "<group>"; };
+		4CD8B493FCC6EB6C6CCD4B0BB325257B /* Mockingbird-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Mockingbird-Swift.modulemap"; sourceTree = "<group>"; };
+		4F24C58217F0E1736D04BC0AE07150B1 /* Pods-TDDAndRefactorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		516A7C47E7A16E16C5F666BD1CFA2A16 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/Mockingbird/HTTPMethod.swift; sourceTree = "<group>"; };
+		5C7ACEEE220BEA3118F10ADEA927E9CF /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Mockingbird/Response.swift; sourceTree = "<group>"; };
+		5EB13D05B66B98E69F439D48E787AC7F /* RequestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestType.swift; path = Sources/Mockingbird/RequestType.swift; sourceTree = "<group>"; };
+		5F2D2AFA32343D8C7AEA66D4C1CE6C41 /* Pods-TDDAndRefactor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactor-Info.plist"; sourceTree = "<group>"; };
+		5F5B07BBB4A5368362DB6E046CA46F66 /* Pods-TDDAndRefactorTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TDDAndRefactorTests-umbrella.h"; sourceTree = "<group>"; };
+		5F83EBEF3CA57332F6DCFB294C3BB3DF /* Pods-TDDAndRefactor */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TDDAndRefactor"; path = Pods_TDDAndRefactor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C004EDA63F3C298AF824162F70FAC1 /* Pods-TDDAndRefactorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactorTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C1F4262A0FCDEBDFEABD519F9E8CFFC /* Pods-TDDAndRefactor-TDDAndRefactorUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TDDAndRefactor-TDDAndRefactorUITests"; path = Pods_TDDAndRefactor_TDDAndRefactorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77CB5148F1B8411A35D58C797691BEE7 /* URL+RemoteService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+RemoteService.swift"; path = "Sources/Mockingbird/Extensions/URL+RemoteService.swift"; sourceTree = "<group>"; };
+		7F5FAFAA188453D258B3E6255733BE69 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FAA979104397E561D7535083913C2B4 /* Pods-TDDAndRefactor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TDDAndRefactor-umbrella.h"; sourceTree = "<group>"; };
+		811C717F46E663A237F00C8AF398AC96 /* Mockingbird-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Mockingbird-Swift"; path = Mockingbird_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1667D55D7138C1E2AD52E06566243EF /* Pods-TDDAndRefactor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TDDAndRefactor-dummy.m"; sourceTree = "<group>"; };
+		A49E91F182BD762F5081AC2F1684DE8C /* Mockingbird-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Mockingbird-Swift-Info.plist"; sourceTree = "<group>"; };
+		A754E6F0D9ABAF6D813DA7870BF67279 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B347FBFAA9FE1B41FCA97F623E720780 /* Pods-TDDAndRefactorTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactorTests-Info.plist"; sourceTree = "<group>"; };
+		BAC748B6871BD0C6E75685B35AE5F5A6 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h"; sourceTree = "<group>"; };
+		BE19415A0589CBEA10A96381596C38A5 /* Pods-TDDAndRefactor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TDDAndRefactor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7EF8442B296448D01FFAD83E8BF84A3 /* URLRequest+encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+encoding.swift"; path = "Sources/Mockingbird/Extensions/URLRequest+encoding.swift"; sourceTree = "<group>"; };
+		D4781F2F7A8CBA7D27F51A93A09A032C /* AccessTokenMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenMiddleware.swift; path = Sources/Mockingbird/Middleware/AccessTokenMiddleware.swift; sourceTree = "<group>"; };
+		D778A39504BF5304C596E97BC95A1DD4 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DEB657BD55A775A0ED646612F367A3F7 /* OSLogger+Subsystem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OSLogger+Subsystem.swift"; path = "Sources/Mockingbird/Extensions/OSLogger+Subsystem.swift"; sourceTree = "<group>"; };
+		DECC02298E44F5FA32653E236D38F39B /* Pods-TDDAndRefactor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TDDAndRefactor.modulemap"; sourceTree = "<group>"; };
+		E09D37C315355B47C4DB95FBECE2D2D6 /* Mockingbird+Defaults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Mockingbird+Defaults.swift"; path = "Sources/Mockingbird/Extensions/Mockingbird+Defaults.swift"; sourceTree = "<group>"; };
+		E1EECA81A24CA2FF0E9DD7DEF3F93916 /* Mockingbird-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Mockingbird-Swift-prefix.pch"; sourceTree = "<group>"; };
+		E714B5E302679EABBA371C868DBFBCF8 /* MockingbirdError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockingbirdError.swift; path = Sources/Mockingbird/MockingbirdError.swift; sourceTree = "<group>"; };
+		F3259493BEEF795F99587462EAE99B43 /* NetworkActivityMiddleware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityMiddleware.swift; path = Sources/Mockingbird/Middleware/NetworkActivityMiddleware.swift; sourceTree = "<group>"; };
+		F42C04AC59FDA83CBA6CF3D57E67D55D /* Pods-TDDAndRefactor-TDDAndRefactorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F793DD31E871A129E6E0C3DA458561D1 /* Pods-TDDAndRefactorTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TDDAndRefactorTests"; path = Pods_TDDAndRefactorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F857F9A449913A5A2D5F7A383C1B9403 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m"; sourceTree = "<group>"; };
+		FAD73FDD4BA9AB61E05EF9E7D6B4E7A1 /* Pods-TDDAndRefactor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactor-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD1D292BD49C4226FAB46406D6DAF93B /* Pods-TDDAndRefactor-TDDAndRefactorUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TDDAndRefactor-TDDAndRefactorUITests-Info.plist"; sourceTree = "<group>"; };
+		FD62A6B6D64BA9A4EA07D94BDE2D585C /* Pods-TDDAndRefactorTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TDDAndRefactorTests.modulemap"; sourceTree = "<group>"; };
+		FE525EFA66F072E3964D9BCEDB7A0AA5 /* Pods-TDDAndRefactorTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TDDAndRefactorTests-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F04A91BFCD91117D62B08498A399303 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B4DBD1326149E2AFCE79CBBEFB337A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C4786E82F79D506724EE171FAC5CB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F40E14C5E7EEEB3F79EA151C2B6CDC2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A35B7E1EBDEF6933C5AE7FC270EEEA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F8CFFF78B272B2EF580E5486227C1E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25A51288C85E1B252104446647D290F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F4D718FF1443E3FDB45BAAC11317FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03ED828BD98FF193FFECECCD7FB69C25 /* Mockingbird-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				D999CC5BE59B8F47106D51EF44E602BB /* Core */,
+				E5BF5DDA2C2312BFFD976D64B8822DB3 /* Support Files */,
+			);
+			name = "Mockingbird-Swift";
+			path = "Mockingbird-Swift";
+			sourceTree = "<group>";
+		};
+		0DB1845DE4246F30879DAEB033198A82 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				86D9456FC4870EEE02ECCB59A13BD3F7 /* Pods-TDDAndRefactor */,
+				DDFA0D5FE8496E44ADF70814A2C51826 /* Pods-TDDAndRefactor-TDDAndRefactorUITests */,
+				63A9FB8C8B2F11921F1167ADF35E2237 /* Pods-TDDAndRefactorTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		297CAE87A19D86484DD6B5F086CED85A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03ED828BD98FF193FFECECCD7FB69C25 /* Mockingbird-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63A9FB8C8B2F11921F1167ADF35E2237 /* Pods-TDDAndRefactorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD62A6B6D64BA9A4EA07D94BDE2D585C /* Pods-TDDAndRefactorTests.modulemap */,
+				061DC6C08DA661C52715DFA76FDC088A /* Pods-TDDAndRefactorTests-acknowledgements.markdown */,
+				13B97241F1511C1E0BEE687DE53EDFB3 /* Pods-TDDAndRefactorTests-acknowledgements.plist */,
+				1D6E77EF0636ABF3C7FFD253737DCAEC /* Pods-TDDAndRefactorTests-dummy.m */,
+				FE525EFA66F072E3964D9BCEDB7A0AA5 /* Pods-TDDAndRefactorTests-frameworks.sh */,
+				B347FBFAA9FE1B41FCA97F623E720780 /* Pods-TDDAndRefactorTests-Info.plist */,
+				5F5B07BBB4A5368362DB6E046CA46F66 /* Pods-TDDAndRefactorTests-umbrella.h */,
+				4F24C58217F0E1736D04BC0AE07150B1 /* Pods-TDDAndRefactorTests.debug.xcconfig */,
+				62C004EDA63F3C298AF824162F70FAC1 /* Pods-TDDAndRefactorTests.release.xcconfig */,
+			);
+			name = "Pods-TDDAndRefactorTests";
+			path = "Target Support Files/Pods-TDDAndRefactorTests";
+			sourceTree = "<group>";
+		};
+		86D9456FC4870EEE02ECCB59A13BD3F7 /* Pods-TDDAndRefactor */ = {
+			isa = PBXGroup;
+			children = (
+				DECC02298E44F5FA32653E236D38F39B /* Pods-TDDAndRefactor.modulemap */,
+				BE19415A0589CBEA10A96381596C38A5 /* Pods-TDDAndRefactor-acknowledgements.markdown */,
+				FAD73FDD4BA9AB61E05EF9E7D6B4E7A1 /* Pods-TDDAndRefactor-acknowledgements.plist */,
+				A1667D55D7138C1E2AD52E06566243EF /* Pods-TDDAndRefactor-dummy.m */,
+				5F2D2AFA32343D8C7AEA66D4C1CE6C41 /* Pods-TDDAndRefactor-Info.plist */,
+				7FAA979104397E561D7535083913C2B4 /* Pods-TDDAndRefactor-umbrella.h */,
+				4AF09719C5B57D031C51A34C8959B7C3 /* Pods-TDDAndRefactor.debug.xcconfig */,
+				28356E67B37B314F7827A9F06B52FEC7 /* Pods-TDDAndRefactor.release.xcconfig */,
+			);
+			name = "Pods-TDDAndRefactor";
+			path = "Target Support Files/Pods-TDDAndRefactor";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				297CAE87A19D86484DD6B5F086CED85A /* Pods */,
+				E63FE10CEE85DB4F5A3509EBAD6C25B4 /* Products */,
+				0DB1845DE4246F30879DAEB033198A82 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D999CC5BE59B8F47106D51EF44E602BB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D4781F2F7A8CBA7D27F51A93A09A032C /* AccessTokenMiddleware.swift */,
+				0E85B875D754027FD936250E7083C4E3 /* AnyEncodable.swift */,
+				516A7C47E7A16E16C5F666BD1CFA2A16 /* HTTPMethod.swift */,
+				11DAE0B22231A5D84D1D7A23D0415B15 /* Middleware.swift */,
+				46DA52B63C13E72EC897CCB90603FA11 /* Mockingbird.swift */,
+				E09D37C315355B47C4DB95FBECE2D2D6 /* Mockingbird+Defaults.swift */,
+				E714B5E302679EABBA371C868DBFBCF8 /* MockingbirdError.swift */,
+				463B8E203A14D8218F3CB28D9A8429C2 /* MockURLProtocol.swift */,
+				F3259493BEEF795F99587462EAE99B43 /* NetworkActivityMiddleware.swift */,
+				DEB657BD55A775A0ED646612F367A3F7 /* OSLogger+Subsystem.swift */,
+				352E1CB512471344052DDAAB893DFDEB /* ParameterEncodingType.swift */,
+				17AF6BC9A09B0175B1B95C990CD13792 /* RemoteService.swift */,
+				0E8B1BFD137DC82219397DEE5A0CB887 /* Request.swift */,
+				0EF0BB00E944EA4E43C82748B98B4A70 /* RequestOperation.swift */,
+				5EB13D05B66B98E69F439D48E787AC7F /* RequestType.swift */,
+				18DA4DDCD5CD9D75732B51F2C2ECB618 /* RequestValidation.swift */,
+				5C7ACEEE220BEA3118F10ADEA927E9CF /* Response.swift */,
+				77CB5148F1B8411A35D58C797691BEE7 /* URL+RemoteService.swift */,
+				C7EF8442B296448D01FFAD83E8BF84A3 /* URLRequest+encoding.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		DDFA0D5FE8496E44ADF70814A2C51826 /* Pods-TDDAndRefactor-TDDAndRefactorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BCA82F454F335BC57F3000012DDC7B4 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.modulemap */,
+				D778A39504BF5304C596E97BC95A1DD4 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.markdown */,
+				A754E6F0D9ABAF6D813DA7870BF67279 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-acknowledgements.plist */,
+				F857F9A449913A5A2D5F7A383C1B9403 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m */,
+				FD1D292BD49C4226FAB46406D6DAF93B /* Pods-TDDAndRefactor-TDDAndRefactorUITests-Info.plist */,
+				BAC748B6871BD0C6E75685B35AE5F5A6 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h */,
+				F42C04AC59FDA83CBA6CF3D57E67D55D /* Pods-TDDAndRefactor-TDDAndRefactorUITests.debug.xcconfig */,
+				7F5FAFAA188453D258B3E6255733BE69 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig */,
+			);
+			name = "Pods-TDDAndRefactor-TDDAndRefactorUITests";
+			path = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests";
+			sourceTree = "<group>";
+		};
+		E5BF5DDA2C2312BFFD976D64B8822DB3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD8B493FCC6EB6C6CCD4B0BB325257B /* Mockingbird-Swift.modulemap */,
+				1C71436150E14CB4780A46CC96979701 /* Mockingbird-Swift-dummy.m */,
+				A49E91F182BD762F5081AC2F1684DE8C /* Mockingbird-Swift-Info.plist */,
+				E1EECA81A24CA2FF0E9DD7DEF3F93916 /* Mockingbird-Swift-prefix.pch */,
+				4579DE7F297C37D583013D16257825DC /* Mockingbird-Swift-umbrella.h */,
+				25335F6722D7BEC5152F4EE891C9545A /* Mockingbird-Swift.debug.xcconfig */,
+				45D94449E113F9DC7060E5E360BB214B /* Mockingbird-Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Mockingbird-Swift";
+			sourceTree = "<group>";
+		};
+		E63FE10CEE85DB4F5A3509EBAD6C25B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				811C717F46E663A237F00C8AF398AC96 /* Mockingbird-Swift */,
+				5F83EBEF3CA57332F6DCFB294C3BB3DF /* Pods-TDDAndRefactor */,
+				6C1F4262A0FCDEBDFEABD519F9E8CFFC /* Pods-TDDAndRefactor-TDDAndRefactorUITests */,
+				F793DD31E871A129E6E0C3DA458561D1 /* Pods-TDDAndRefactorTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		035A97503D07287F68611C634F214980 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42CF3D5C03E6478E7438CC7A1D08923 /* Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1084D73BA803D942B7AFC76A1362FDCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034C490E7116237A88EA938ADAB58331 /* Mockingbird-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1102437C1E8B18033327B6896FAD1019 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E2499F176BF9807CEEE4DA33AED435 /* Pods-TDDAndRefactor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F403FE31FD0E98E01A414F72166C524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FDD84926D321BAA390984BA4500EA0 /* Pods-TDDAndRefactorTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3472E58B84DFC7D377EF8AC82317A8FD /* Pods-TDDAndRefactor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBEEF115FFD2CFD8DD53CF859296A535 /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactor" */;
+			buildPhases = (
+				1102437C1E8B18033327B6896FAD1019 /* Headers */,
+				5D4817E7B5FB55B1F4F21373137807A6 /* Sources */,
+				4F04A91BFCD91117D62B08498A399303 /* Frameworks */,
+				919F0D41A002800CEBF258A108E142D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TDDAndRefactor";
+			productName = Pods_TDDAndRefactor;
+			productReference = 5F83EBEF3CA57332F6DCFB294C3BB3DF /* Pods-TDDAndRefactor */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A51884D6B07A7E3F83805784481DA64 /* Pods-TDDAndRefactor-TDDAndRefactorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC4B5B0ED63D003D934EF0909132746 /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactor-TDDAndRefactorUITests" */;
+			buildPhases = (
+				035A97503D07287F68611C634F214980 /* Headers */,
+				491DA67EDE36E8438E47C053C76AF80B /* Sources */,
+				6C4786E82F79D506724EE171FAC5CB18 /* Frameworks */,
+				828AE957486D3A9848CCB651292D26B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TDDAndRefactor-TDDAndRefactorUITests";
+			productName = Pods_TDDAndRefactor_TDDAndRefactorUITests;
+			productReference = 6C1F4262A0FCDEBDFEABD519F9E8CFFC /* Pods-TDDAndRefactor-TDDAndRefactorUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7D9CD6C8ADBD31268105618303E9DC8 /* Mockingbird-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38AD5779E786A60A9BB8DF908E130E56 /* Build configuration list for PBXNativeTarget "Mockingbird-Swift" */;
+			buildPhases = (
+				1084D73BA803D942B7AFC76A1362FDCF /* Headers */,
+				34432545F8541CB3A720D8434BC7A280 /* Sources */,
+				A25A51288C85E1B252104446647D290F /* Frameworks */,
+				DD0F28DB405973BF552EFC03BFADEA60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mockingbird-Swift";
+			productName = Mockingbird_Swift;
+			productReference = 811C717F46E663A237F00C8AF398AC96 /* Mockingbird-Swift */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7AE3BE40E6CEFB27B8FE67D19337E6E /* Pods-TDDAndRefactorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B24B84736C76A7802BE990BDBAB122F /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactorTests" */;
+			buildPhases = (
+				8F403FE31FD0E98E01A414F72166C524 /* Headers */,
+				D6790139893F781457525B3B5093C1C9 /* Sources */,
+				9A35B7E1EBDEF6933C5AE7FC270EEEA2 /* Frameworks */,
+				C6A078EE98282C4CDEAF440595ADA944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21D0A91B517D292BFFC4132C2852A8D0 /* PBXTargetDependency */,
+				5085C3A7A16FC43078C23E606AB8D69F /* PBXTargetDependency */,
+			);
+			name = "Pods-TDDAndRefactorTests";
+			productName = Pods_TDDAndRefactorTests;
+			productReference = F793DD31E871A129E6E0C3DA458561D1 /* Pods-TDDAndRefactorTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E63FE10CEE85DB4F5A3509EBAD6C25B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7D9CD6C8ADBD31268105618303E9DC8 /* Mockingbird-Swift */,
+				3472E58B84DFC7D377EF8AC82317A8FD /* Pods-TDDAndRefactor */,
+				8A51884D6B07A7E3F83805784481DA64 /* Pods-TDDAndRefactor-TDDAndRefactorUITests */,
+				D7AE3BE40E6CEFB27B8FE67D19337E6E /* Pods-TDDAndRefactorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		828AE957486D3A9848CCB651292D26B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919F0D41A002800CEBF258A108E142D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A078EE98282C4CDEAF440595ADA944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD0F28DB405973BF552EFC03BFADEA60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34432545F8541CB3A720D8434BC7A280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B5303C8AB2A78A44A81D4281997C9F /* AccessTokenMiddleware.swift in Sources */,
+				C2D2C7289C8CC73E3C63945DB3E08B80 /* AnyEncodable.swift in Sources */,
+				89418C49C93D51A32A984AB7EF0AD1B3 /* HTTPMethod.swift in Sources */,
+				479042936559AB7715B5F1E3406A614E /* Middleware.swift in Sources */,
+				CC25AD00954D0222B0D96D38A5538EAF /* Mockingbird.swift in Sources */,
+				E67D7FC496D7E3227AA5D0FB54F8F9E1 /* Mockingbird+Defaults.swift in Sources */,
+				7AAE08D03881FAAB16412F30A359AA91 /* Mockingbird-Swift-dummy.m in Sources */,
+				47186F8935A32AFD0C8ED0551C1057BF /* MockingbirdError.swift in Sources */,
+				7CB23F766D1B33F6DF94BF75387D084A /* MockURLProtocol.swift in Sources */,
+				DB859D4B46756617C633C478F903BAB1 /* NetworkActivityMiddleware.swift in Sources */,
+				C4434D22EB494BBE3A185E45693D9DB5 /* OSLogger+Subsystem.swift in Sources */,
+				A7D8B6BA4F6DD3D28C5B4CD3BFC6F847 /* ParameterEncodingType.swift in Sources */,
+				B6BAF24B0A75ACA6FFDA92AFF2346B07 /* RemoteService.swift in Sources */,
+				85E0B634FDD4D7251ABD5FCE8731EFC4 /* Request.swift in Sources */,
+				8820AEEEE86EEDE674E3CAA682EA8ABA /* RequestOperation.swift in Sources */,
+				3CE3E955F18AC68979E5ACF5A21A5CC6 /* RequestType.swift in Sources */,
+				1339BA5C3D52C48E357B068E84B4DF31 /* RequestValidation.swift in Sources */,
+				A2B8510E90645353A49E796B8B09DFC0 /* Response.swift in Sources */,
+				601A3CF6D4A9CBF51EED6A6C2F1B5D1F /* URL+RemoteService.swift in Sources */,
+				C329685DE78F235245A55230FC904A26 /* URLRequest+encoding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491DA67EDE36E8438E47C053C76AF80B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4BE01FFA3B29030C39028CE95FBB2D /* Pods-TDDAndRefactor-TDDAndRefactorUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D4817E7B5FB55B1F4F21373137807A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12B4B89CAC519BC041FBC80FDF2ABFAA /* Pods-TDDAndRefactor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6790139893F781457525B3B5093C1C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E26325D5746D0386347180A96E1A88B /* Pods-TDDAndRefactorTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21D0A91B517D292BFFC4132C2852A8D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Mockingbird-Swift";
+			target = A7D9CD6C8ADBD31268105618303E9DC8 /* Mockingbird-Swift */;
+			targetProxy = 34934BDA1E800F5BE5ACBAE901038B36 /* PBXContainerItemProxy */;
+		};
+		5085C3A7A16FC43078C23E606AB8D69F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TDDAndRefactor";
+			target = 3472E58B84DFC7D377EF8AC82317A8FD /* Pods-TDDAndRefactor */;
+			targetProxy = CCDE0577995EFD029257DADEA15F68DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2E72E36C4FB0A44D122D17B31A1391EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF09719C5B57D031C51A34C8959B7C3 /* Pods-TDDAndRefactor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactor/Pods-TDDAndRefactor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactor/Pods-TDDAndRefactor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BF55BC20645C2447D3E609CFF72BD2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F24C58217F0E1736D04BC0AE07150B1 /* Pods-TDDAndRefactorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40C1FF8AD301BB88421EFE62AD5E468B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5FAFAA188453D258B3E6255733BE69 /* Pods-TDDAndRefactor-TDDAndRefactorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests/Pods-TDDAndRefactor-TDDAndRefactorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests/Pods-TDDAndRefactor-TDDAndRefactorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		737BE64F1D28E62CBD03FC55FEE7CAD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D94449E113F9DC7060E5E360BB214B /* Mockingbird-Swift.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Mockingbird_Swift;
+				PRODUCT_NAME = Mockingbird_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94C7C9C4132877AF5CEECA7DA53087D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C004EDA63F3C298AF824162F70FAC1 /* Pods-TDDAndRefactorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactorTests/Pods-TDDAndRefactorTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8FEB707CFEC6FC5F092BC5B5546023E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25335F6722D7BEC5152F4EE891C9545A /* Mockingbird-Swift.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Mockingbird-Swift/Mockingbird-Swift.modulemap";
+				PRODUCT_MODULE_NAME = Mockingbird_Swift;
+				PRODUCT_NAME = Mockingbird_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAAEF9CD214BCC00898FB17C947108DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42C04AC59FDA83CBA6CF3D57E67D55D /* Pods-TDDAndRefactor-TDDAndRefactorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests/Pods-TDDAndRefactor-TDDAndRefactorUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactor-TDDAndRefactorUITests/Pods-TDDAndRefactor-TDDAndRefactorUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6EFB653CCB4E9B93C36B5665FC8F101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28356E67B37B314F7827A9F06B52FEC7 /* Pods-TDDAndRefactor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TDDAndRefactor/Pods-TDDAndRefactor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TDDAndRefactor/Pods-TDDAndRefactor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38AD5779E786A60A9BB8DF908E130E56 /* Build configuration list for PBXNativeTarget "Mockingbird-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8FEB707CFEC6FC5F092BC5B5546023E /* Debug */,
+				737BE64F1D28E62CBD03FC55FEE7CAD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B24B84736C76A7802BE990BDBAB122F /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BF55BC20645C2447D3E609CFF72BD2D /* Debug */,
+				94C7C9C4132877AF5CEECA7DA53087D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBEEF115FFD2CFD8DD53CF859296A535 /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E72E36C4FB0A44D122D17B31A1391EA /* Debug */,
+				E6EFB653CCB4E9B93C36B5665FC8F101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC4B5B0ED63D003D934EF0909132746 /* Build configuration list for PBXNativeTarget "Pods-TDDAndRefactor-TDDAndRefactorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAAEF9CD214BCC00898FB17C947108DC /* Debug */,
+				40C1FF8AD301BB88421EFE62AD5E468B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

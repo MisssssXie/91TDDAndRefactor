@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import TDDAndRefactor
+import Mockingbird_Swift
 
 final class TDDAndRefactorTests: XCTestCase {
 

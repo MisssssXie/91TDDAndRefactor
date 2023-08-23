@@ -1,0 +1,6 @@
+framework module Pods_TDDAndRefactor_TDDAndRefactorUITests {
+  umbrella header "Pods-TDDAndRefactor-TDDAndRefactorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
