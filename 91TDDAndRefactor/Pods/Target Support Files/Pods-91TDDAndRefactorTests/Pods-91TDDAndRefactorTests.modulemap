@@ -1,6 +1,0 @@
-framework module Pods_91TDDAndRefactorTests {
-  umbrella header "Pods-91TDDAndRefactorTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
