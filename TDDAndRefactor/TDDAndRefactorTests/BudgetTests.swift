@@ -9,12 +9,12 @@ import XCTest
 @testable import TDDAndRefactor
 
 final class BudgetTests: XCTestCase {
+    let dateFormat = dateFormatter
+    
     var sut: BudgetService!
 
     override func setUpWithError() throws {
-        let budgets = self.getMockDate()
-        let repo = MockBudgetRepo(budgets: budgets)
-        self.sut = BudgetService(repo: repo)
+    
     }
 
     override func tearDownWithError() throws {
@@ -28,6 +28,7 @@ final class BudgetTests: XCTestCase {
 
     func test_查無該月份() {
         self.given(budgets: [Budget(yearMonth: "202305", amount: 0)])
+        
         XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20230601"), end: self.stringToDate("20230602")), 0)
     }
 
@@ -41,17 +42,39 @@ final class BudgetTests: XCTestCase {
         XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20230829"), end: self.stringToDate("20230829")), 1)
     }
     
-    func test_跨月份有預算() {
+    func test_月份有預算_兩個月() {
         self.given(budgets: [Budget(yearMonth: "202308", amount: 31),
                              Budget(yearMonth: "202309", amount: 300)])
         XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20230831"), end: self.stringToDate("20230902")), 21)
     }
+    
+    func test_月份有預算_三個月() {
+        self.given(budgets: [Budget(yearMonth: "202308", amount: 31),
+                             Budget(yearMonth: "202309", amount: 300),
+                             Budget(yearMonth: "202310", amount: 3100)
+                            ])
+        XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20230831"), end: self.stringToDate("20231002")), 501)
+    }
+    
+    func test_潤年有預算() {
+        self.given(budgets: [Budget(yearMonth: "202402", amount: 29),
+                             Budget(yearMonth: "202403", amount: 310)
+                            ])
+        XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20240227"), end: self.stringToDate("20240301")), 13)
+    }
+    
+    func test_非潤年有預算() {
+        self.given(budgets: [Budget(yearMonth: "202302", amount: 28),
+                             Budget(yearMonth: "202303", amount: 310)
+                            ])
+        XCTAssertEqual(self.sut.totalAmount(start: self.stringToDate("20230227"), end: self.stringToDate("20230301")), 12)
+    }
 
     private func stringToDate(_ dateString: String, format: String = "YYYYMMdd") -> Date! {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)!
-        return dateFormatter.date(from: dateString)
+    
+        dateFormat.dateFormat = format
+        
+        return dateFormat.date(from: dateString)
     }
 
     private func getMockDate() -> [Budget] {

@@ -18,6 +18,7 @@
 		361BB1272A9592A80001033E /* TDDAndRefactorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361BB1262A9592A80001033E /* TDDAndRefactorUITestsLaunchTests.swift */; };
 		36716DAE2A95ED1A00A01EB2 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36716DAD2A95ED1A00A01EB2 /* Budget.swift */; };
 		36716DB02A95EE4F00A01EB2 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36716DAF2A95EE4F00A01EB2 /* BudgetTests.swift */; };
+		368ABA9E2A965577001E3841 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36716DAD2A95ED1A00A01EB2 /* Budget.swift */; };
 		3E7AE325A04F3C5F5E07C4F3 /* Pods_TDDAndRefactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17AC5B319F6C33398242E8BA /* Pods_TDDAndRefactor.framework */; };
 		4B3487683BD972C71ED7D398 /* Pods_TDDAndRefactor_TDDAndRefactorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A54DE64819C56978D948C0 /* Pods_TDDAndRefactor_TDDAndRefactorUITests.framework */; };
 		CA3255CCF9332977CFF4B047 /* Pods_TDDAndRefactorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7C1849FDB10821C9B9FC50 /* Pods_TDDAndRefactorTests.framework */; };
@@ -407,6 +408,7 @@
 			files = (
 				36716DB02A95EE4F00A01EB2 /* BudgetTests.swift in Sources */,
 				361BB11B2A9592A80001033E /* TDDAndRefactorTests.swift in Sources */,
+				368ABA9E2A965577001E3841 /* Budget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
