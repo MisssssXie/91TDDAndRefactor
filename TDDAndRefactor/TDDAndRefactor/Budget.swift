@@ -9,12 +9,6 @@ import Foundation
 
 let timeZone = TimeZone(secondsFromGMT: 0)!
 
-var dateFormatter: DateFormatter {
-    let dateFormatter = DateFormatter()
-    dateFormatter.timeZone = timeZone
-    return dateFormatter
-}
-
 var calendar: Calendar {
     var calendar = Calendar(identifier: .iso8601)
     calendar.timeZone = timeZone
