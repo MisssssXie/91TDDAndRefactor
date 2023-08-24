@@ -16,85 +16,66 @@ var calendar: Calendar {
 }
 
 class BudgetService {
-    private lazy var dateFormat: DateFormatter = {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = timeZone
-        dateFormatter.dateFormat = "yyyyMM"
-        return dateFormatter
-    }()
-    
+
     let repo: BudgetRepo
 
     init(repo: BudgetRepo) {
         self.repo = repo
     }
-    
-    func totalAmount(start: Date, end: Date) -> Decimal {
-        if start > end {
-            return 0
-        }
 
-        let budgets = self.repo.getAll()
+    func totalAmount(start: Date, end: Date) -> Decimal {
         
-        let startToEndMonthData = self.getStartToEndMonthData(budgets: budgets, start: start, end: end)
-        if startToEndMonthData.isEmpty {
-            return 0
-        }
+        let startToEndMonthData = self.getValidBudgets(budgets: self.repo.getAll(), start: start, end: end)
         
         var totalAmount: Decimal = 0.0
 
         for budget in startToEndMonthData {
-            
-            let dailyAmount = self.dailyAmount(budget)
-            
-            if startToEndMonthData.count == 1 {
-                let diffDay = start.diffDay(toTime: end)
-                let amount = dailyAmount * (Decimal(diffDay!) + 1)
-                totalAmount += amount
-                continue
+
+            var startDay = start
+            var endDay = end
+
+            if (start.yearMonth == end.yearMonth) {
+                startDay = start
+                endDay = end
             }
-            
-            if let firstDateOfMonth = startToEndMonthData.first,
+            else if let firstDateOfMonth = startToEndMonthData.first,
                budget.yearMonth == firstDateOfMonth.yearMonth {
-                let lastDay = budget.date.lastDateOfMonth
-                let diffDay = start.diffDay(toTime: lastDay)
-                let amount = dailyAmount * (Decimal(diffDay!) + 1)
-                totalAmount += amount
-                continue
+                
+                startDay = start
+                endDay = budget.lastDateOfMonth
             }
-            
-            if let lastDateOfMonth = startToEndMonthData.last,
-               budget.yearMonth == lastDateOfMonth.yearMonth {
-                let firstDay = budget.date.firstDateOfMonth
-                let diffDay = firstDay.diffDay(toTime: end)
-                let amount = dailyAmount * (Decimal(diffDay!) + 1)
-                totalAmount += amount
-                continue
+            else if let lastDateOfMonth = startToEndMonthData.last,
+                    budget.yearMonth == lastDateOfMonth.yearMonth {
+
+                startDay = budget.firstDateOfMonth
+                endDay = end
             }
-            
-            totalAmount += Decimal(budget.amount)
+            else {
+
+                startDay = budget.firstDateOfMonth
+                endDay = budget.lastDateOfMonth
+            }
+
+            totalAmount += getPeriodAmount(startDay, endDay, budget.dailyAmount())
         }
         
         return totalAmount
     }
 
-    private func getStartToEndMonthData(budgets: [Budget], start: Date, end: Date) -> [Budget] {
+
+    private func getPeriodAmount(_ startDate: Date, _ endDate: Date, _ dailyAmount: Decimal) -> Decimal {
+
+        let diffDay = startDate.getDiffDay(toTime: endDate)
+        return dailyAmount * (Decimal(diffDay) + 1)
+    }
+
+    private func getValidBudgets(budgets: [Budget], start: Date, end: Date) -> [Budget] {
+
         let filteredBudgets = budgets.filter { budget in
-            let budgetDate = budget.date.firstDateOfMonth
-            return budgetDate.lastDateOfMonth >= start && budgetDate <= end
+            return budget.lastDateOfMonth >= start && budget.firstDateOfMonth <= end
         }
 
         return filteredBudgets
-    }
-    
-    fileprivate func dailyAmount(_ budget: Budget) -> Decimal {
-        // 預設每月30天
-        let daysInMonth = calendar.range(of: .day, in: .month, for: self.dateFormat.date(from: budget.yearMonth)!)?.count ?? 30
-        let firstDay = budget.date.firstDateOfMonth
-        let lastDay = budget.date.lastDateOfMonth
-        // 每日預算
-        let dailyAmount = Decimal(budget.amount) / Decimal(daysInMonth)
-        return dailyAmount
     }
 }
 
@@ -116,24 +97,47 @@ class MockBudgetRepo: BudgetRepo {
 }
 
 struct Budget {
+
     let yearMonth: String
     let amount: Int
 
-    var date: Date {
+    var firstDateOfMonth: Date {
+        return self.date.firstDateOfMonth
+    }
+
+    var lastDateOfMonth: Date {
+        return self.date.lastDateOfMonth
+    }
+
+    private var date: Date {
         return self.getDate(from: self.yearMonth)
     }
 
     private func getDate(from yearMonth: String) -> Date {
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = timeZone
-        dateFormatter.dateFormat = "yyyyMM"
-        if let date = dateFormatter.date(from: yearMonth) {
-            let components = calendar.dateComponents([.year, .month], from: date)
-            return calendar.date(from: components) ?? Date()
+
+        if let date = self.getDateFormatter().date(from: yearMonth) {
+            return date.yearMonth
         }
 
         return Date()
+    }
+
+    func dailyAmount() -> Decimal {
+
+        // 預設每月30天
+        let daysInMonth = calendar.range(of: .day, in: .month, for: self.getDateFormatter().date(from: self.yearMonth)!)?.count ?? 30
+
+        // 每日預算
+        let dailyAmount = Decimal(self.amount) / Decimal(daysInMonth)
+        return dailyAmount
+    }
+
+    func getDateFormatter() -> DateFormatter {
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = timeZone
+        dateFormatter.dateFormat = "yyyyMM"
+        return dateFormatter
     }
 }
 
@@ -155,7 +159,12 @@ extension Date {
          let component = calendar.dateComponents([.month], from: self)
          return component.month ?? -1
      }
-     
+
+    var yearMonth: Date {
+
+        let components = calendar.dateComponents([.year, .month], from: self)
+        return calendar.date(from: components) ?? Date()
+    }
      /// 台灣時區的當月第一天  00:00 日期 (Date 為絕對值不分時區, 因此回傳值會顯示為 GMT+0 的日期)
      var firstDateOfMonth: Date {
          let component = calendar.dateComponents([.year, .month], from: self)
@@ -170,10 +179,10 @@ extension Date {
          return calendar.date(from: component) ?? Date()
      }
      
-     func diffDay(toTime: Date) -> Int? {
+     func getDiffDay(toTime: Date) -> Int {
          let formerTime = calendar.startOfDay(for: self)
          let endTime = calendar.startOfDay(for: toTime)
 
-         return calendar.dateComponents([.day], from: formerTime, to: endTime).day
+         return calendar.dateComponents([.day], from: formerTime, to: endTime).day ?? 0
      }
 }
